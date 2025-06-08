@@ -1,0 +1,636 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Iceland", serif;
+    line-height: 1.2;
+}
+
+/* ------------------------------ CSS HEADER ------------------------------------------- */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header-nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    padding: 0 10px;
+}
+
+.header-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.menu-items {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-accueil:hover,
+.orange-color {
+    color: #F88600;
+}
+
+.menu-creations:hover {
+    color: #62BC1B;
+}
+
+.menu-contact:hover {
+    color: #103DAF;
+}
+
+/* ------------------------------ CSS FOOTER ------------------------------------------- */
+
+.footer-nav {
+    background-color: #7C7C7C;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-icon {
+    font-size: 36px;
+    color: #F3F3F3;
+}
+
+.separator {
+    color: #F3F3F3;
+    margin: 0 10px;
+    height: 70%;
+}
+
+/* ------------------------------ CSS INDEX ------------------------------------------- */
+
+.main {
+    margin: 60px 47px 50px 52px;
+}
+
+.first-container {
+    height: calc(100vh - 60px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-container-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    max-width: 561px;
+}
+
+.logo-principal {
+    width: 50%;
+    max-width: 251px;
+    max-height: 301px;
+    height: auto;
+    z-index: 2;
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F3F3F3;
+    width: calc((100% - min(50%, 251px)) + 20px);
+    max-width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 10px 10px 0;
+    z-index: 1;
+}
+
+.square-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 0.9;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.medium-text {
+    font-size: 16px;
+}
+
+.second-container {
+    width: 100%;
+}
+
+.second-container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-title {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.photo-profil {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    max-height: 553px;
+    margin: 50px 0 0 0;
+}
+
+.text-introduction {
+    text-align: justify;
+    word-wrap: break-word;
+    margin: 50px 0;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.button-discover {
+    font-family: "Iceland", serif;
+    color: black;
+    background-color: #62BC1B;
+    border: 0;
+    border-radius: 40px;
+    width: 70%;
+    max-width: 300px;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.button-discover:hover,
+.button-project:hover {
+    background-color: #F3F3F3;
+    color: #62BC1B;
+}
+
+/* ------------------------------ CSS CREATIONS ------------------------------------------- */
+
+.main-creations {
+    margin: 110px 20px 50px;
+}
+
+.section {
+    margin: 50px 0;
+}
+
+.section-title {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.subsection,
+.subsection-publicite,
+.subsection-publicite-reverse {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.section-separator-left {
+    width: 50%;
+    margin-left: 0;
+}
+
+.section-separator-right {
+    width: 50%;
+    margin-right: 0;
+}
+
+.images-banniere-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 480px;
+}
+
+.images-banniere {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    max-width: fit-content;
+}
+
+.images-photographie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+}
+
+.images-ui-kit-et-moodboard,
+.images-wireframe-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.images-photographie a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.images-ui-kit-et-moodboard a,
+.images-wireframe-desktop a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-banniere-container {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    max-width: 240px;
+    max-height: 352px;
+}
+
+.photo-banniere {
+    width: 100%;
+    height: 100%;
+}
+
+.button-banniere {
+    font-family: "Iceland", serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    color: white;
+    background-color: transparent;
+    border: solid 2px white;
+    padding: 15px;
+}
+
+.button-banniere:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+}
+
+.photo-photographie {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+.photo-webdesign {
+    width: 90%;
+    height: auto;
+    max-width: 450px;
+}
+
+.photo-full-width {
+    width: 100%;
+    height: auto;
+    max-width: 599px;
+}
+
+.photo-publicite {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
+.description-publicite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-veganers {
+    width: 100%;
+    max-width: 560px;
+    max-height: 315px;
+}
+
+.button-project-container {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.button-project {
+    font-family: "Iceland", serif;
+    color: black;
+    background-color: #62BC1B;
+    border: 0;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 300px;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+
+.button-creation-container {
+    width: 100%;
+    text-align: center;
+}
+
+.button-creation {
+    font-family: "Iceland", serif;
+    color: black;
+    border: solid 2px black;
+    padding: 15px 30px;
+}
+
+/* ------------------------------ CSS CONTACT ------------------------------------------- */
+
+.main-contact {
+    margin: 110px 20px 50px;
+}
+
+.text-contact {
+    margin: 50px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.icone-competence {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 20px;
+}
+
+.button-contact-container {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.button-cv {
+    font-family: "Iceland", serif;
+    background-color: #62BC1B;
+    color: white;
+    border: 0;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 300px;
+    line-height: 1.8;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.button-cv:hover {
+    background-color: #F3F3F3;
+    color: #62BC1B;
+}
+
+.button-contact {
+    font-family: "Iceland", serif;
+    background-color: #103DAF;
+    color: white;
+    border: 0;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 300px;
+    line-height: 1.8;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.button-contact:hover {
+    background-color: #F3F3F3;
+    color: #103DAF;
+}
+
+/* ------------------------------ CSS RESPONSIVE ------------------------------------------- */
+
+
+@media screen and (min-width: 500px) {
+
+    .square {
+        width: calc((100% - min(50%, 251px)) + 30px);
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .header-nav {
+        padding: 0 20px;
+    }
+
+    .menu-items {
+        margin: 0 20px;
+        font-size: 20px;
+    }
+
+    .small-text {
+        font-size: 20px;
+    }
+
+    .medium-text {
+        font-size: 23px;
+    }
+
+    .footer-nav {
+        padding: 0 20px;
+    }
+
+    .main {
+        margin: 60px 57px 50px 62px;
+    }
+
+    .big-title,
+    .section-title {
+        font-size: 32px;
+    }
+
+    .square {
+        width: calc((100% - min(50%, 251px)) + 35px);
+    }
+
+    .text-introduction {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .text {
+        max-width: 80%;
+        font-size: 18px;
+    }
+
+    .text-contact {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .icone-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .header-nav {
+        padding: 0 25px;
+    }
+
+    .menu-items {
+        margin: 0 25px;
+        font-size: 20px;
+    }
+
+    .small-text {
+        font-size: 22px;
+    }
+
+    .medium-text {
+        font-size: 28px;
+    }
+
+    .footer-nav {
+        padding: 0 25px;
+    }
+
+    .main {
+        margin: 60px 62px 50px 67px;
+    }
+
+    .second-container {
+        position: relative;
+        align-items: stretch;
+        margin: 200px 0 350px 0;
+    }
+
+    .second-container-content {
+        width: 40%;
+    }
+
+    .big-title {
+        text-align: start;
+        font-size: 40px;
+    }
+
+    .photo-profil {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .text-introduction {
+        font-size: 22px;
+        margin: 20px 0;
+        font-size: 22px;
+    }
+
+    .button-discover {
+        font-size: 25px;
+    }
+
+    .text,
+    .text-contact {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 25px;
+    }
+
+    .subsection-publicite {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .subsection-publicite-reverse {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .images-banniere-container {
+        max-width: 100%;
+    }
+
+    .photo-banniere-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .subsection-publicite a,
+    .subsection-publicite-reverse a {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .description-publicite {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    .text-introduction {
+        margin: 50px 0;
+    }
+
+}
